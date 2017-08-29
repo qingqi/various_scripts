@@ -12,3 +12,11 @@ watch -n 5 free -m
 
 "$@" # separate word
 "$*" # single word
+
+
+# Top display CPU time(Time+ minutes:seconds.hundredths) used(not clock time) since the process started.
+# pid file creation time is the process creation time
+ls -ld /proc/pid
+# or ps elaspse time in format [[dd-]hh:]mm:ss
+ps -o etime= -p <pid>
+ps -o etime -p <pid>
