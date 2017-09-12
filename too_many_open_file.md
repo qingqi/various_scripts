@@ -1,4 +1,6 @@
-System wide File Descriptors(FD) limits:
+1. System Wide
+file: /etc/sysctl.conf
+Query File Descriptors(FD) limits:
 ```bash
 cat /proc/sys/fs/file-max
 sysctl fs.file-max
@@ -15,3 +17,20 @@ Relogin or:
 ```bash
 sysctl -p
 ```
+
+2. Per user
+file: /etc/security/limits.conf
+Hard limit:
+```bash
+ulimit -Hn
+```
+Soft limit:
+```bash
+ulimit -Sn
+```
+Edit in /etc/security/limits.conf:
+## Example hard limit for max opened files
+marin        hard nofile 4096
+## Example soft limit for max opened files
+marin        soft nofile 1024
+
