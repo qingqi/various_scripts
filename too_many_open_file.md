@@ -1,5 +1,5 @@
-1. System Wide
-file: /etc/sysctl.conf
+1. System Wide  
+file: /etc/sysctl.conf  
 Query File Descriptors(FD) limits:
 ```bash
 cat /proc/sys/fs/file-max
@@ -18,8 +18,8 @@ Relogin or:
 sysctl -p
 ```
 
-2. Per user
-file: /etc/security/limits.conf
+2. Per user  
+file: /etc/security/limits.conf  
 Hard limit:
 ```bash
 ulimit -Hn
