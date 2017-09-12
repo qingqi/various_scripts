@@ -29,8 +29,10 @@ Soft limit:
 ulimit -Sn
 ```
 Edit in /etc/security/limits.conf:
+```vim
 Example hard limit for max opened files
 marin        hard nofile 4096
 Example soft limit for max opened files
 marin        soft nofile 1024
+```
 
