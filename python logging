@@ -1,0 +1,7 @@
+loggers, handlers, filters, and formatters
+
+loggers:
+name: namespace hierarchy using dots (periods) as separators. For example, a logger named ‘scan’ is the parent of loggers ‘scan.text’, ‘scan.html’ and ‘scan.pdf’. 
+
+handler:
+Handlers send the log records (created by loggers) to the appropriate destination.
